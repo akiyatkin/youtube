@@ -1,0 +1,6 @@
+{
+	"domready":true,
+	"tpl":"-youtube/youtube.tpl",
+	"tplroot":"video",
+	"jsontpl":"-youtube/video.php?id={config.id}"
+}

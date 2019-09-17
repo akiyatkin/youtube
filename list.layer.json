@@ -1,0 +1,6 @@
+{
+	"domready":true,
+	"tpl":"-youtube/youtube.tpl",
+	"tplroot":"list",
+	"json":"-youtube/youtube.php"
+}

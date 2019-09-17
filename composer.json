@@ -1,0 +1,12 @@
+{
+	"name":"infrajs/youtube",
+	"require":{
+		"infrajs/load":"~1",
+		"infrajs/ans":"~1",
+		"infrajs/config":"~1",
+		"infrajs/access":"~1",
+		"infrajs/event":"~1",
+		"infrajs/popup":"~1",
+		"infrajs/memcode":"~1"
+	}
+}

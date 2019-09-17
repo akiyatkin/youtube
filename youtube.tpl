@@ -1,3 +1,8 @@
+{simple:}
+	<div style="min-width:50%"></div>
+	<div class="embed-responsive embed-responsive-16by9">
+  		<iframe class="embed-responsive-item" width="960" height="720" src="https://www.youtube.com/embed/{config.id}?autoplay=1&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  	</div>
 {video:}
 	<h1>{data.data.title}</h1>
 	<div class="embed-responsive embed-responsive-16by9">

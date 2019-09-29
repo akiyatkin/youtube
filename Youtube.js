@@ -33,5 +33,17 @@ Youtube = {
 	popup: function (id) {
 		var layer = this.getVideoLayer(id);
 		popup.open(layer);
+	},
+	mp4layer: {
+		"tpl":"-youtube/youtube.tpl",
+		"tplroot":"mp4",
+		"parsedtpl":"{config.src}",
+		"config":{
+		}
+	},
+	mp4: function (src){
+		this.mp4layer.config.src = src;
+		popup.hide();
+		popup.open(this.mp4layer);
 	}
 }

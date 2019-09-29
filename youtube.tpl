@@ -33,3 +33,12 @@
 	<span class="a" data-id="{id}">
 		<img class="img-fluid" src="/-imager/?src={img}&w=480&h=270&crop=1">
 	</span>
+{mp4:}
+<style>
+	.modal-dialog {
+    	max-width: 800px;
+    }
+</style>
+<div class="embed-responsive embed-responsive-16by9">
+	<video class="embed-responsive-item" src="{config.src}" controls autoplay></video>
+</div>

@@ -1,4 +1,9 @@
 {simple:}
+	<style>
+		.modal-dialog {
+	    	max-width: 800px;
+	    }
+	</style>
 	<div style="min-width:50%"></div>
 	<div class="embed-responsive embed-responsive-16by9">
   		<iframe class="embed-responsive-item" width="960" height="720" src="https://www.youtube.com/embed/{config.id}?autoplay=1&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -34,11 +39,11 @@
 		<img class="img-fluid" src="/-imager/?src={img}&w=480&h=270&crop=1">
 	</span>
 {mp4:}
-<style>
-	.modal-dialog {
-    	max-width: 800px;
-    }
-</style>
-<div class="embed-responsive embed-responsive-16by9">
-	<video class="embed-responsive-item" src="{config.src}" controls autoplay></video>
-</div>
+	<style>
+		.modal-dialog {
+	    	max-width: 800px;
+	    }
+	</style>
+	<div class="embed-responsive embed-responsive-16by9">
+		<video class="embed-responsive-item" src="{config.src}" controls autoplay></video>
+	</div>

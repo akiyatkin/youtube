@@ -1,4 +1,5 @@
-Youtube = {
+import { Popup } from '/vendor/infrajs/popup/Popup.js'
+const Youtube = {
 	layers:{},
 	simples:{},
 	getVideoLayer: function (id) {
@@ -28,11 +29,11 @@ Youtube = {
 	},
 	simple: function (id){
 		var layer = this.getSimpleLayer(id);
-		popup.open(layer);
+		Popup.open(layer);
 	},
 	popup: function (id) {
 		var layer = this.getVideoLayer(id);
-		popup.open(layer);
+		Popup.open(layer);
 	},
 	mp4layer: {
 		"tpl":"-youtube/youtube.tpl",
@@ -43,7 +44,9 @@ Youtube = {
 	},
 	mp4: function (src){
 		this.mp4layer.config.src = src;
-		popup.hide();
-		popup.open(this.mp4layer);
+		Popup.hide();
+		Popup.open(this.mp4layer);
 	}
 }
+
+export { Youtube }

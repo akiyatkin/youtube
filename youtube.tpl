@@ -20,17 +20,19 @@
 	<div class="panel-body youtube-list">
 		<h1 style="margin-top:0">Видео</h1>
 		{data.list::item}
-		<script>
-			domready(function(){
-				Event.one('Controller.onshow', function () {
-					
-					infrajs.code_remove('youtube-video');
-					$('.youtube-list').find('.a').click( function () {
-						var id=$(this).data('id');
-						Youtube.popup(id);
-					});
+		<script type="module">
+			import { Code } from '/vendor/infrajs/memcode/Code.js'
+			import { Youtube } from '/vendor/akiyatkin/youtube/Youtube.js'
+			
+			//Event.one('Controller.onshow', function () {
+				
+				Code.remove('youtube-video');
+				$('.youtube-list').find('.a').click( function () {
+					var id=$(this).data('id');
+					Youtube.popup(id);
 				});
-			});
+			//});
+			
 		</script>
 	</div>
 {item:}

@@ -1,5 +1,5 @@
 {
-	"tpl":"-youtube/youtube.tpl",
+	"tpl":"-youtube/layout.html",
 	"tplroot":"video",
 	"jsontpl":"-youtube/video.php?id={config.id}"
 }

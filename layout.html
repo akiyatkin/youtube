@@ -1,0 +1,25 @@
+{simple:}
+	<style>
+		.modal-dialog {
+	    	max-width: 800px;
+	    }
+	</style>
+	<div style="min-width:50%"></div>
+  	<iframe width="960" height="720" src="https://www.youtube.com/embed/{config.id}?autoplay=1&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+{video:}
+	<h1>{data.data.title}</h1>
+  	<iframe width="960" height="720" src="https://www.youtube.com/embed/{config.id}?autoplay=1&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  	<p>{data.data.description}</p>
+{item:}
+	<h3>{title}</h3>
+	<span class="a" data-id="{id}">
+		<img class="img-fluid" src="/-imager/?src={img}&w=480&h=270&crop=1">
+	</span>
+{mp4:}
+	<style>
+		.modal-dialog {
+	    	max-width: 800px;
+	    }
+	</style>
+	<video src="{config.src}" controls autoplay></video>
+	

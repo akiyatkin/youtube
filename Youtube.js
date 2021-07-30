@@ -1,4 +1,5 @@
 import { Popup } from '/vendor/infrajs/popup/Popup.js'
+
 const Youtube = {
 	layers:{},
 	simples:{},
@@ -17,7 +18,7 @@ const Youtube = {
 	getSimpleLayer: function (id) {
 		if (this.simples[id]) return this.simples[id];
 		var layer = {
-			"tpl":"-youtube/youtube.tpl",
+			"tpl":"-youtube/layout.html",
 			"tplroot":"simple",
 			"config":{
 				"id":id
@@ -36,7 +37,7 @@ const Youtube = {
 		Popup.open(layer);
 	},
 	mp4layer: {
-		"tpl":"-youtube/youtube.tpl",
+		"tpl":"-youtube/layout.html",
 		"tplroot":"mp4",
 		"parsedtpl":"{config.src}",
 		"config":{
